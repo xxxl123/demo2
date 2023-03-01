@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<!-- <default-config>
+		<property name="driverClass">oracle.jdbc.OracleDriver</property>
+		<property name="jdbcUrl">jdbc:oracle:thin:@192.168.0.X:1521:xe</property>
+		<property name="user">root</property>
+		<property name="password">123456</property>
+	</default-config> -->
+	<named-config name="hsweb">
+		<property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/project01?serverTimezone=UTC</property>
+		<property name="user">root</property>
+		<property name="password">mysql</property>
+		<property name="initialPoolSize">10</property>
+		<property name="maxIdleTime">30</property>
+		<property name="maxPoolSize">100</property>
+	</named-config>
+	
+</c3p0-config>
